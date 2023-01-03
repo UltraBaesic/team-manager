@@ -1,0 +1,15 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="mediumtext">
+    <div class="marginbottom">
+        <form action="${pageContext.request.contextPath}/FileUploadServlet" method="POST" enctype="multipart/form-data" id="FileUploadForm" >
+            <input type="hidden" name="teamid" value="" id="teamid"/>
+            <input type="file" name="afile" class="hide" id="FileLoader"/>
+            <input type="button" name="sub" class="btn orangebtn padding-horizontal radius not-confirm" id="uploadFile" value="Upload File"/>
+            <div class="parts margin-horizontal confirm hide" id="filename">File Name</div>
+            <input type="button" value="Cancel" name="cancel" class="btn redbtn padding-horizontal radius confirm hide" id="cancelFileUpload"/>
+            <input type="submit" value="Upload" name="submit" class="btn orangebtn padding-horizontal radius confirm hide" id="confirmUpload"/>
+        </form>
+    </div>
+    <div class="resourceList"></div>
+</div>

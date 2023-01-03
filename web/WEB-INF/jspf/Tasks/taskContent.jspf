@@ -1,0 +1,62 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="rightContent" id="taskroom">
+    <div class="padding mobile-show hide white borderbottom faintborder mob-nm">
+        <span class="memberName orangetext bold"></span>
+        <span class="right mobileoption1Link bluetext mediumtext mini-margintop">tap to change</span>
+    </div>
+    <div class="tabs mediumtext">
+        <div class="parts double-padding-horizontal half-padding-vertical cursor pageoptionLink optionSelected pageoption1Link left nomargin">Todo Tasks</div>
+        <div class="parts double-padding-horizontal half-padding-vertical cursor pageoptionLink pageoption2Link left nomargin">Completed Tasks</div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="padding middleContent">
+        <div class="marginbottom white padding half-padding-vertical mediumtext border lightborder">
+            <div class="left">
+                <div class="parts marginright paddingright borderright ashborder">
+                    <div class="memberName">Software Team</div>
+                </div>
+                <div class="parts linkbtn orangetext cursor btn_addtask paddingright borderright ashborder">Create New Task</div>
+                <select name="taskList" class="parts white cursor noborder minimal myselect" id="pre-task-list">
+                    <option value="0">-- Create new Task Instance --</option>
+                </select>
+                <select name="sortList" class="parts white cursor noborder minimal myselect maxwidth-150" id="sort-list">
+                    <option value="1">Sort By Date</option>
+                    <option value="2">Sort By Alphabetical Order (Asc)</option>
+                    <option value="3">Sort By Alphabetical Order (Desc)</option>
+                    <option value="4">Sort By Labels</option>
+                </select>
+            </div>
+            <div class="half-padding-vertical right greytext">
+                <div class="parts tooltipParent cursor">
+                    <i class="fa fa-fw fa-th-large cursor"></i>
+                    <div class="tooltip bottomtip hide margintop">Block View</div>
+                </div>
+                <div class="tooltipParent cursor parts marginleft">
+                    <i class="fa fa-fw fa-bars"></i>
+                    <div class="tooltip bottomtip hide margintop">List View</div>
+                </div>
+                <div class="tooltipParent cursor margin-horizontal parts searchBtn">
+                    <i class="fa fa-fw fa-search"></i>
+                    <div class="tooltip bottomtip hide margintop">Search</div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="padding-horizontal mediumtext hide">
+            <div class="parts bluebtn radius half-padding-vertical padding-horizontal half-marginright">Label One</div>
+            <div class="parts bluebtn radius half-padding-vertical padding-horizontal half-marginright">Label Two</div>
+            <div class="parts whitebtn border greyborder bold radius half-padding-vertical padding-horizontal half-marginright">+</div>
+        </div>
+        <div class="pageoption pageoption1">
+            <%@include file="todo.jspf" %>
+        </div>
+        <div class="pageoption pageoption2 hide">
+            <div id="tasks-done"></div>
+        </div>
+        <div class="wide center">
+            <div class="whitebtn center padding half-padding-vertical margintop border lightborder hide" id="moreTasks">Show More</div>
+        </div>
+    </div>
+    <%@include file="activeTask.jspf" %>
+</div>

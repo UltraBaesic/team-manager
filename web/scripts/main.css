@@ -1,0 +1,850 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-Nov-2016, 15:37:21
+    Author     : Stephen
+*/
+body{
+    margin: 0;
+    width: 100%;
+    height: 92vh;
+    padding: 0;
+    font-family: Verdana;
+}
+html{
+    /*height: 100%;*/
+    width: 100%;
+    background-image: url("../images/office5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------Index---------------------*/
+.fullpage{
+    /*padding: 2em auto;*/
+    margin-top: 10%;
+}
+.height-100{
+    height: 100px;
+}
+.height-400{
+    height: 400px;
+}
+.height-500{
+    height: 500px;
+}
+.centerPiece{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30%;
+    text-align: center;
+    width: 40%;
+    transition: 1s;
+}
+.appName{
+    padding-bottom: 2em;
+    font-size: .8em;
+    /*margin-bottom: .5em;*/
+    /*border-bottom: 1px solid #ddd;*/
+}
+.bigLogo{
+    padding: .1em .2em;
+    /*font-weight: bold;*/
+    font-size: 5em;
+    color: #fff;
+    border-radius: 20px;
+    /*border: 2px solid #000;*/
+    background: #f36; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #f36, #f90); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #f36, #f90); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #f36, #f90); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #f36, #f90); /* Standard syntax */
+}
+.regularLogo{
+    font-size: 2em;
+    border-radius: 10px;
+}
+.logotxt{
+    text-align: left;
+    margin-left: .1em;
+    font-size: 4em;
+}
+.panBox{
+    width: 30%;
+    font-size: .85em;
+    padding: 4em 5%;
+    margin: 0 5% 0 5%;
+    /*margin-bottom: 2em;*/
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 1s;
+}
+.msgBox{
+    width: 30%;
+    margin: 1em;
+}
+.msg-mini{
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    background-color: rgba(255, 255, 150, 0.9);
+}
+.loginPanel{
+    border-left: 1em solid #f90;
+}
+.registerPanel{
+    border-left: 1em solid #f36;
+}
+.big-btn{
+    width: calc(90% - 2px);
+    padding: .5em 5%;
+    font-size: 1.3em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/*--------------------Index---------------------*/
+
+/*--------------------left Panel-------------------*/
+#leftPanel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 17%;
+    padding-top: 4.8em;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    z-index: 2;
+}
+.panel-list{
+    padding: 1em 5%;
+    width: 90%;
+    border-bottom: 1px solid #f7f7f7;
+    /*margin-bottom: .5em;*/
+    cursor: pointer;
+}
+.team-leader{
+    color: #f36;
+}
+.teamName{
+    border-bottom: 1px solid #eee;
+}
+.selected-member{
+    width: calc(90% - 5px);
+    border-left: 5px solid #f36;
+}
+.profile-pic-mini{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+.profile-pic{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin-right: .5em;
+}
+.profile-pic-large{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin-right: .5em;
+}
+.closepanel{
+    position: absolute;
+    right: .8em;
+    top: 6.5em;
+    background-color: #f90;
+    color: #fff;
+    font-weight: bold;
+    font-size: .8em;
+    padding: .3em .8em;
+    border-radius: 10px;
+}
+/*--------------------left Panel-------------------*/
+
+/*-----------------------Right Content-------------------------*/
+.rightContent{
+    margin-left: 17%;
+    margin-top: 4.8em;
+    width: 83%;
+    padding: 0;
+}
+.middleContent{
+    width: calc(100% - 370px);
+}
+.msg-container{
+    height: 60vh;
+}
+/*-----------------------Right Content-------------------------*/
+
+/*-----------------------Right Panel-------------------------*/
+.active-pane{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    padding: 0 20px;
+    padding-top: 4.8em;
+    background-color: #fff;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+    z-index: 2;
+}
+.active-pane-empty{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+.break{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50%;
+    background-color: rgba(255,255,255,.95);
+    text-align: center;
+}
+/*-----------------------Right Panel-------------------------*/
+
+/*------------------------------header-------------------------*/
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 2em;
+    /*height: 30px;*/
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 3;
+}
+.header-link{
+    display: inline-block;
+    padding: 8px 1.3em;
+    margin-top: .3em;
+    cursor: pointer;
+    font-size: .8em;
+}
+.header-link:hover{
+    color: #f90;
+}
+.header-link-selected{
+    border-bottom: 1px solid #f90;
+}
+/*------------------------------header-------------------------*/
+
+/*-----------------------------Dashboard---------------------*/
+.pageContent{
+    margin-top: 50px;
+    padding: 10px 5%;
+    width: 90%;
+}
+.tile{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+    max-width: 300px;
+    min-width: 150px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: .5em;
+}
+.tile-header{
+    font-size: 1em;
+}
+.tile-body{
+    font-size: .8em;
+    margin-top: .5em;
+    color: #999;
+}
+/*-----------------------------Dashboard---------------------*/
+
+/*-----------------------------Table---------------------*/
+table{
+    width: 100%;
+}
+thead tr{
+    font-weight: bold;
+    background-color: #fff !important;
+}
+thead td{
+    border-bottom: 1px solid #eee;
+}
+tr:nth-child(odd){
+    background-color: #fff6e9;
+}
+td{
+    padding: 1em;
+}
+/*-----------------------------Table---------------------*/
+
+/*-----------------------------Tasks---------------------*/
+.task{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    padding-bottom: .5em;
+    font-size: .9em;
+    width: calc(49% - 3em);
+    min-width: 200px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.tasks-todo{
+    padding-bottom: 4em;
+}
+.task-doing{
+    background-color: #ffc;
+    border-color: #ccc;
+}
+.task-paused{
+    background-color: #ffe4cc;
+    border-color: #ccc;
+}
+.task-done{
+    background-color: #cfc;
+    border-color: #ccc;
+}
+.task-topic{
+    margin-bottom: 1em;
+    margin-right: 1em;
+    cursor: move;
+}
+.task-type{
+    position: absolute;
+    top: 1.2em;
+    right: 0;
+    font-weight: bold;
+    font-size: .8em;
+    padding: .3em .8em;
+    color: #fff;
+    opacity: .2;
+}
+.task:hover .task-type{
+    opacity: 1;
+}
+.task_work{
+    background-color: #00cc00;
+}
+.task_meeting{
+    background-color: #ff6633;
+}
+.task_research{
+    background-color: #6666ff;
+}
+.task-parent{
+    margin-top: .5em;
+    font-size: .85em;
+    color: #777;
+}
+.task-details{
+    font-size: .8em;
+    color: #777;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #ddd;
+}
+.task-options{
+    font-size: .9em;
+}
+.task-option{
+    display: inline-block;
+    vertical-align: middle;
+    padding: .3em .5em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #777;
+}
+.task-option:hover{
+    background-color: #f63;
+    color: #fff;
+}
+.task-hanger{
+    position: absolute;
+    top: calc(100% - 1em);
+    right: 5%;
+    padding: .5em 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 100;
+}
+.createtask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 100;
+}
+.createsubtask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 100;
+}
+.newtaskForm{
+    width: 30%;
+    min-width: 300px;
+    padding: 1em 2%;
+    margin: 10% auto;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+.portlet-placeholder {
+    border: 1px dotted black;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: .9em;
+    width: calc(49% - 3em);
+    border-radius: 10px;
+    margin-bottom: 1em;
+    margin-right: .5em;
+    margin-left: .5em;
+    z-index: 1;
+}
+/*-----------------------------Tasks---------------------*/
+
+/*-----------------------------Timesheet---------------------*/
+.time-line{
+    height: 50px;
+    width: 1px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #333;
+    border-right: none;
+}
+.long-line{
+    height: 120px;
+}
+.timesheet-entry{
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    /*font-size: .7em;*/
+    color: #777;
+}
+.tms-entry-position .tile{
+    /*width: 100% !important;*/
+}
+.minitile{
+    font-size: .6em;
+    font-weight: bold;
+    padding: .3em .8em;
+    border-radius: 5px;
+}
+.timesheet-tile-left{
+    position: absolute;
+    top: 0;
+    right: 110%;
+    max-width: 500px;
+    min-width: 300px;
+}
+.timesheet-tile-right{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    max-width: 500px;
+    min-width: 300px;
+}
+.list:nth-child(even){
+    background-color: #fff6e9;
+}
+/*-----------------------------Timesheet---------------------*/
+
+.tileoptionSelected{
+    background-color: #f90 !important;
+    color: #fff !important;
+    border: 1px solid #f90 !important;
+}
+.tileoptionSelected:hover{
+    background-color: #fff !important;
+    border-color: #f90 !important;
+    color: #f90 !important;
+}
+
+
+
+
+
+
+.myselect {
+
+    /* styling */
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    max-width: 300px;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.maxwidth-150{
+    max-width: 150px !important;
+}
+
+.myselect.minimal {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    padding: 0.5em 3.5em 0.5em 1em;
+}
+
+.myselect.minimal:focus {
+    background-image:
+        linear-gradient(45deg, green 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, green 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+
+
+.myselect:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+
+
+
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    padding-top: 21%;
+    text-align: center;
+    z-index: 100;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+
+
+
+
+/*--------------------------------Search -----------------------------------------*/
+.searchBack{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    padding-top: 20%;
+    text-align: center;
+    z-index: 100;
+}
+.searchBox{
+    background-color: #fff;
+    font-size: 1.05em;
+}
+/*--------------------------------Search -----------------------------------------*/
+
+
+
+/*-------------------------------- Task View -----------------------------------------*/
+.taskBack{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    padding: 2em 0;
+    text-align: center;
+    overflow: auto;
+    font-size: 1em;
+    font-family: Helvetica;
+    letter-spacing: .05em;
+    z-index: 100;
+}
+.taskViewBox{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.taskViewDetails{
+    float: left;
+    width: 65%;
+    background-color: #fff;
+}
+.taskViewComments{
+    float: right;
+    width: 33%;
+    background-color: #fff;
+}
+.t-v-header{
+    padding: .8em 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+.t-v-content{
+    height: 550px;
+    padding: 1em 1.5em;
+    overflow: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2em;
+}
+.t-v-journal{
+    padding: .8em 1em;
+    font-size: .8em;
+    background-color: #e7ecf6;
+    margin-bottom: 1em;
+}
+/*-------------------------------- Task View -----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*------------------------------ Mobile View ------------------------------------------*/
+@media screen and (max-width: 990px){
+    html{
+        width: 100%;
+        background-image: none;
+        background-color: #eee;
+    }
+    .panBox{
+        width: 80%;
+        padding: 4em 1em;
+        margin: 1em;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: 1s;
+    }
+    .que{
+        margin-bottom: 1em;
+    }
+    .msgBox{
+        width: calc(95% - 2em);
+        margin: 1em;
+    }
+    .header-link,
+    .header-user{
+        width: 90%;
+        margin: auto;
+        font-size: 1em!important;
+        text-align: center;
+        border-bottom: 1px solid #f90;
+        padding: 1em 5%;
+    }
+    .header-user{
+        margin-left: 0!important;
+    }
+    .header-btn{
+        margin-left: 0!important;
+        margin-top: 1em!important;
+    }
+    .pageContent{
+        margin-top: 4em;
+        padding: 2em 5%;
+        width: 90%;
+    }
+    .rightContent{
+        margin: 0;
+        margin-top: 4.8em;
+        width: 100%;
+        padding: 0;
+    }
+    #leftPanel{
+        top: 0;
+        width: 90%;
+        padding-top: 4em;
+        font-size: 1.2em;
+    }
+    .tabs div.parts{
+        padding: 1em!important;
+    }
+    .messageBody{
+        height: 80px;
+    }
+    .msg-container{
+        height: 58vh;
+    }
+    .active-pane{
+        width: 80%;
+        padding: 0 5%;
+        padding-top: 4em;
+        font-size: 1.1em;
+    }
+    .middleContent{
+        width: calc(100% - 2em);
+    }
+    .task{
+        width: calc(90% - 1em);
+    }
+}
+@media screen and (max-width: 990px) and (min-width: 601px) {
+    /* tablets */
+    body{
+        font-size: 2em;
+    }
+    .txt{
+        border-radius: 0;
+    }
+    .tile{
+        width: 80%;
+        max-width: none;
+        font-size: 1.3em;
+        border-radius: 0;
+    }
+    .rightContent{
+        margin-top: 3.7em;
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* phones */
+    .panBox{
+        font-size: .7em;
+    }
+    .msgBox{
+        font-size: .85em;
+    }
+    #header{
+        padding: 1em;
+    }
+    .messageBody{
+        height: 30px;
+    }
+    .msg-container{
+        height: 52vh;
+    }
+    .active-pane{
+        padding-top: 5em;
+    }
+}
+/*------------------------------ Mobile View ------------------------------------------*/

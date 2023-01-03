@@ -1,0 +1,119 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="overlay dialog_cover hide transparent">
+    <div class="dialog_box">
+        <div class="dialog_loader hide-on-load">Loading...</div>
+        <div class="dialog_header">
+            <div class="parts mediumtext" id="dialog_title">
+            </div>
+            <div class="parts cursor dialog_close close_dialog bold">X</div>
+        </div>
+        <div class="half-padding white wide-minus-padding">
+            <div class="left wide-6x">
+                <div class="parts border lightborder half-padding-horizontal nopaddingright mini-padding-vertical smalltext" id="dialog_trail">
+                    <i class="fa fa-book fa-fw" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="right midiwide">
+                <div class="parts wide-minus-padding">
+                    <input type="text" name="" value="" class="txt_dialog half-padding dialog_search_txt wide smalltext" placeholder="Search"/>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="dialog_middle smalltext">
+            <div class="dialog_objects_pane">
+                <div class="dialog_object dialog_disabled" id="dialog_bookslink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-book fa-fw mini-marginright" aria-hidden="true"></i>
+                    Books
+                </div>
+                <div class="dialog_object dialog_disabled" id="dialog_articleslink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-file fa-fw mini-marginright" aria-hidden="true"></i>
+                    Articles
+                </div>
+                <div class="dialog_object dialog_disabled" id="dialog_sectionslink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul fa-fw mini-marginright" aria-hidden="true"></i>
+                    Sections
+                </div>
+                <div class="dialog_object dialog_disabled" id="dialog_bookmarklink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-fw mini-marginright" aria-hidden="true"></i>
+                    Bookmarks
+                </div>
+                <div class="dialog_object dialog_disabled" id="dialog_indexheaderslink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-file-text-o fa-fw mini-marginright" aria-hidden="true"></i>
+                    Index Headers
+                </div>
+                <div class="dialog_object dialog_disabled" id="dialog_indexeslink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-sticky-note-o fa-fw mini-marginright" aria-hidden="true"></i>
+                    Indexes
+                </div>
+                <div class="dialog_object dialog_disabled" id="dialog_tagslink">
+                    <i class="fa fa-chevron-right fa-fw half-marginright smalltext ashtext" aria-hidden="true"></i>
+                    <i class="fa fa-tags fa-fw mini-marginright" aria-hidden="true"></i>
+                    Tags
+                </div>
+            </div>
+            <div class="dialog_items_pane">
+                <div class="dialog_items_header bluetext" id="dialog_content_title">
+                    <div class="parts twothirdswide half-padding cursor">Name</div>
+                    <div class="parts half-padding cursor">Date Modified</div>
+                </div>
+                <div class="dialog_items_content half-padding-horizontal" id="dialog_content">
+                    <div class="dialog_item">
+                        <div class="parts twothirdswide left">
+                            <i class="fa fa-book fa-fw cursor mini-marginright" aria-hidden="true"></i>
+                            Sample Book
+                        </div>
+                        <div class="parts right quarterwide">21/02/2017</div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="dialog_bottom padding textright mediumtext">
+            <div class="half-marginbottom dialog-extra dialog-create hide">
+                <div class="parts half-marginright">Title:</div>
+                <div class="parts threequarterwide">
+                    <input type="text" name="" value="" class="textleft txt_dialog white ashborder mini-padding half-padding-horizontal wide-minus-padding" id="objectTitle" placeholder="Title"/>
+                </div>
+            </div>
+            <div class="half-marginbottom dialog-extra dialog-link hide">
+                <div class="parts half-marginright">Link text:</div>
+                <div class="parts threequarterwide">
+                    <input type="text" name="" value="" class="textleft txt_dialog white ashborder mini-padding half-padding-horizontal wide-minus-padding" id="linktext" placeholder="Link Text"/>
+                </div>
+            </div>
+            <div class="half-marginbottom dialog-extra dialog-index hide">
+                <div class="parts half-marginright">Index Headers:</div>
+                <div class="parts threequarterwide">
+                    <input type="text" name="" value="" class="textleft txt_dialog white ashborder mini-padding half-padding-horizontal wide-minus-padding" id="headers" placeholder="Index Headers"/>
+                </div>
+            </div>
+            <div class="half-marginbottom dialog-extra dialog-index hide">
+                <div class="parts half-marginright">Body text:</div>
+                <div class="parts threequarterwide">
+                    <input type="text" name="" value="" class="textleft txt_dialog white ashborder mini-padding half-padding-horizontal wide-minus-padding" id="bodytext" placeholder="Body Text"/>
+                </div>
+            </div>
+            <div class="half-marginbottom dialog-extra dialog-tag hide">
+                <div class="parts half-marginright">Selected Tags:</div>
+                <div class="parts threequarterwide" style="max-height: 100px; overflow-y: auto; overflow-x: hidden">
+                    <div class="textleft div_dialog white ashborder mini-padding half-padding-horizontal wide-minus-padding" id="selectedTags"></div>
+                </div>
+            </div>
+            <div class="parts half-marginright dialog-filename" id="dialog_select_title">file name:</div>
+            <div class="parts halfwide half-marginright dialog-filename threequarterwide-mobile half-margin-bottom-mobile">
+                <input type="text" name="" value="" class="textleft txt_dialog white ashborder mini-padding half-padding-horizontal wide-minus-padding" id="dialog_file_name" placeholder="Select a file"/>
+            </div>
+            <div class="parts minibtn whitebtn blacktext border ashborder padding-horizontal half-marginright" id="dialog_select">Select</div>
+            <div class="parts minibtn whitebtn blacktext border ashborder padding-horizontal close_dialog">Cancel</div>
+        </div>
+    </div>
+</div>

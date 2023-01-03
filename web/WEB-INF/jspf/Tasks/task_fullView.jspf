@@ -1,0 +1,102 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="taskBack hide">
+    <div class="taskViewBox">
+        <div class="taskViewDetails">
+            <div class="t-v-header">Task Details</div>
+            <div class="t-v-content tileoptionParent">
+                <div class="paddingbottom">
+                    <div class="profile-pic-large"></div>
+                    <div class="parts">
+                        <div class="bold t-v-user">Stephen George</div>
+                        <div class="bold"><div class="mini-radius parts red whitetext mini-padding-vertical padding-horizontal smalltext t-v-type">Meeting</div></div>
+                    </div>
+                    <div class="parts right t-v-options"></div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="paddingbottom">
+                    <div class="t-v-title bold half-marginbottom">Code HTML email template for welcome email</div>
+                    <div class="t-v-desc ashtext">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione 
+                        reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? 
+                        Lorem ipsum dolor sit amet. <br/><br/>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione 
+                        reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? 
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="padding-vertical">
+                    <div class="parts double-marginright">
+                        <div class="mediumtext mini-marginbottom bold">Start Date</div>
+                        <div><span class="t-v-start-date">22 March 2016 </span><span class="half-marginleft ashtext mediumtext t-v-start-time">10:00 A.M</span></div>
+                    </div>
+                    <div class="parts double-marginright double-marginleft">
+                        <div class="mediumtext mini-marginbottom bold">Duration</div>
+                        <div class="t-v-duration">10 hours</div>
+                    </div>
+                </div>
+                <div class="paddingtop borderbottom lightborder">
+                    <div class="padding half-padding-vertical border noborderbottom lightborder parts mediumtext cursor tileoption1Link tileoptionLink tileoptionSelected">Journals</div>
+                    <div class="padding half-padding-vertical border noborderbottom lightborder parts mediumtext cursor tileoption2Link tileoptionLink">Sub Tasks</div>
+                </div>
+                <div class="tileoption tileoption1">
+                    <div class="padding-vertical">
+                        <div class="mediumtext half-marginbottom bold">Journal Entries</div>
+                        <div class="marginbottom paddingbottom borderbottom lightborder">
+                            <div class="parts almostwide">                            
+                                <textarea name="" rows="1" placeholder="New Journal Entry" class="txt mini-radius mediumtext padding-horizontal wide-minus-double-padding nomargin t-v-new-journal-text"></textarea>
+                            </div>
+                            <div class="parts padding-horizontal half-padding-vertical redbtn cursor mediumtext bold marginleft t-v-post-new-journal">POST</div>
+                        </div>
+                        <div class="t-v-journals">
+                            <div class="t-v-journal clone hide">
+                                <div class="t-v-journal-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione 
+                                    reprehenderit magni similique?
+                                </div>
+                                <div class="mediumtext margintop">
+                                    <div class="left bold">
+                                        <span class="t-v-journal-date">22 March 2016</span> 
+                                        <span class="t-v-journal-time">10:00 A.M</span>
+                                    </div>
+                                    <div class="right textright linkbtn bluetext t-v-journal-quote">Quote</div>
+                                    <div style="clear: both"></div>
+                                </div>
+                            </div>
+                            <div class="no-journal hide greytext textcenter mediumtext">No Journals for this Task</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tileoption tileoption2">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="taskViewComments">            
+            <div class="t-v-header">
+                Comments
+                <div class="right t-v-close"><i class="fa fa-fw fa-times cursor"></i></div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="t-v-content">
+                <div class="t-v-newcomment marginbottom paddingbottom borderbottom lightborder">
+                    <div class="half-marginbottom">
+                        <div class="profile-pic"></div>
+                        <div class="parts">
+                            <div class="bold parts mediumtext username">Stephen George</div>
+                            <div class="smalltext bluetext usertype">Member</div>
+                        </div>
+                    </div>
+                    <div class="wide">                            
+                        <textarea name="" rows="2" placeholder="New Comment Text" class="txt mini-radius mediumtext padding-horizontal wide-minus-double-padding nomargin t-v-comment-text"></textarea>
+                    </div>
+                    <div class="wide center half-padding-vertical mini-radius redbtn cursor mediumtext bold marginleft t-v-post-comment">POST COMMENT</div>
+                </div>
+                <div class="t-v-comments">
+                    <div class="greytext textcenter">No Comments</div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</div>

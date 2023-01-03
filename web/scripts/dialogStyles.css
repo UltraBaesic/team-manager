@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Oct-2017, 16:51:54
+    Author     : Stephen
+*/
+
+/*----------------------------------------- Dialog ---------------------------*/
+.dialog_box{
+    font-family: Arial;
+    width: 47%;
+    min-width: 600px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: #ddd;
+    border: 1px solid #555;
+}
+.dialog_header{
+    font-family: Calibri;
+    position: relative;
+    width: 96%;
+    padding: .3em 2%;
+    background-color: #fff;
+}
+.dialog_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .2em .6em;
+}
+.dialog_close:hover{
+    background-color: red;
+    color: #fff;
+}
+.dialog_middle{
+    height: 250px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+}
+.dialog_objects_pane{
+    float: left;
+    width: 27%;
+    height: 100%;
+    /*background-color: #eee;*/
+    border-right: 1px solid #ddd;
+    overflow: auto;
+}
+.dialog_object{
+    width: 92%;
+    padding: .5em 4%;
+    margin: .5em 0;
+    cursor: pointer;
+}
+.dialog_object:hover{
+    background-color: #ebf4fd;
+}
+.dialog_selected{
+    background-color: #d4e9ff;
+}
+.dialog_selected:hover{
+    background-color: #d4e9ff !important;
+}
+.dialog_disabled{
+    color: #ccc;
+    cursor: auto;
+}
+.dialog_disabled:hover{
+    background-color: transparent;
+}
+.dialog_disabled .fa-chevron-right{
+    color: #ddd !important;
+}
+.dialog_items_pane{
+    float: right;
+    width: 72%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: auto;
+}
+.dialog_items_header{
+    height: 10%;
+}
+.dialog_items_content{
+    height: 90%;
+    overflow-y: auto;
+}
+.dialog_item{
+    padding: .3em;
+    cursor: pointer
+}
+.dialog_item:hover{
+    background-color: #ebf4fd;
+}
+.dialog_option{
+    padding: .3em;
+    cursor: pointer
+}
+.dialog_option:hover{
+    background-color: #ebf4fd;
+}
+.txt_dialog{
+    border: 1px solid #ddd;
+}
+/*----------------------------------------- Dialog ---------------------------*/

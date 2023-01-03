@@ -1,0 +1,65 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="tasks-doing" class="active-pane">
+    <div class="mediumtext">
+        <div class="half-padding-vertical">Currently Working On:</div>
+        <div class="whitetext padding-horizontal half-padding-vertical mediumtext textcenter bold doing-type"></div>
+        <div class="padding-vertical slightly-largetext borderbottom faintborder greytext">
+            <div class="doing-topic">This is the task that I am currently working on.</div>
+            <div class="doing-description half-margintop mediumtext"></div>
+        </div>
+        <!--    <div class="padding-vertical borderbottom faintborder">
+                <div class="left cursor"><div class="parts padding half-padding-vertical border orangeborder radius doing-pause"><i class="fa fa-fw fa-pause orangetext"></i> Pause</div></div>
+                <div class="right cursor"><div class="parts padding half-padding-vertical border greenborder radius doing-complete">Complete <i class="fa fa-fw fa-check greentext"></i></div></div>
+                <div style="clear: both"></div>
+            </div>-->
+        <div class="paddingtop borderbottom faintborder center">
+            <div class="parts padding half-padding-vertical border redborder radius cursor tooltipParent half-marginright marginbottom doing-break"><div class="tooltip bottomtip hide half-margintop doing-break-text">Bathroom Break</div><i class="fa fa-fw fa-bathtub redtext"></i><span class="hide doing-break-icon">fa-bathtub</span></div>
+            <div class="parts padding half-padding-vertical border redborder radius cursor tooltipParent half-marginright marginbottom doing-break"><div class="tooltip bottomtip hide half-margintop doing-break-text">Lunch Break</div><i class="fa fa-fw fa-cutlery redtext"></i><span class="hide doing-break-icon">fa-cutlery</span></div>
+            <div class="parts padding half-padding-vertical border redborder radius cursor tooltipParent half-marginright marginbottom doing-break"><div class="tooltip bottomtip hide half-margintop doing-break-text">Phone Call Break</div><i class="fa fa-fw fa-phone redtext"></i><span class="hide doing-break-icon">fa-phone</span></div>
+            <div class="parts padding half-padding-vertical border redborder radius cursor tooltipParent half-marginright marginbottom doing-break"><div class="tooltip bottomtip hide half-margintop doing-break-text">Off Seat</div><i class="fa fa-fw fa-user-secret redtext"></i><span class="hide doing-break-icon">fa-user-secret</span></div>
+            <div class="parts padding half-padding-vertical border greenborder radius cursor tooltipParent doing-complete marginbottom"><div class="tooltip bottomtip hide half-margintop">Completed</div><i class="fa fa-fw fa-check greentext"></i></div>
+        </div>
+        <div class="padding-vertical borderbottom faintborder">
+            <div class="left ashtext">Assigned By:</div>
+            <div class="right doing-created-by">Stephen George</div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="padding-vertical borderbottom faintborder">
+            <div class="left ashtext">Date Started:</div>
+            <div class="right doing-started-date">1st March 2018</div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="padding-vertical borderbottom faintborder">
+            <div class="left ashtext">Time Started:</div>
+            <div class="right doing-time-started">2:14p.m</div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="padding-vertical borderbottom faintborder">
+            <div class="left ashtext">Time Budget:</div>
+            <div class="right doing-budget">2hours</div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="margintop btn mini-radius orangebtn bold textcenter c-t-open">Open Task</div>
+        <div class="margintop btn mini-radius linkbtn border greyborder bold textcenter c-t-hide hide mobile-show">Hide Panel</div>
+        <!--    <div class="half-padding-vertical borderbottom orangeborder double-margintop">
+                <div class="left ashtext orangetext">Comments</div>
+                <div class="right mediumtext mini-margintop linkbtn">Post Comment</div>
+                <div style="clear: both"></div>
+            </div>-->
+        <div class="session-id hide"></div>
+        <!--<div class="doing-comment margintop"></div>-->
+        <div class="active-pane-empty">There is no active task currently.</div>
+        <div class="active-pane-paused">
+            <div class="break break-clone hide">
+                <div class="extralargetext half-marginbottom">
+                    <div class="parts padding border redborder round cursor tooltipParent white"><i class="fa fa-fw redtext break-icon"></i></div>
+                </div>
+                <div class="slightly-largetext break-text">Bathroom Break</div>
+                <div class="margintop">
+                    <div class="parts padding half-padding-vertical border orangebtn radius cursor doing-resume"><i class="fa fa-fw fa-play"></i> Resume</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

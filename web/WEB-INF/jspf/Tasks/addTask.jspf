@@ -1,0 +1,41 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="createtask hide">
+    <div class="newtaskForm">
+        <div class="half-padding-vertical borderbottom lightborder marginbottom">
+            <div class="parts left">New Task</div>
+            <div class="parts right smalltext">
+                <label class="parts marginright"><input type="radio" name="task_type" value="meeting" /> meeting</label>
+                <label class="parts marginright"><input type="radio" name="task_type" value="research" /> research</label>
+                <label class="parts marginright"><input type="radio" name="task_type" value="work" checked="checked"/> work</label>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="parts-top">
+            <select name="" class="parts border redborder cursor radius mediumtext minimal padding half-padding-vertical" id="addtask_user">
+                <option>Select Member</option>
+            </select>
+        </div>
+        <div class="half-padding-vertical borderbottom lightborder marginbottom"></div>
+        <div class="">
+            <input type="text" name="topic" value="" class="txt txt_text orangeborder mediumtext radius" id="addtask_topic" placeholder="Task Topic"/>
+            <textarea name="" rows="3" cols="1" class="txt txt_text orangeborder mediumtext radius nomarginbottom" placeholder="Task Description" id="addtask_desc">
+            </textarea>
+        </div>
+        <div class="half-padding-vertical borderbottom lightborder marginbottom"></div>
+        <div>
+            <div class="parts marginright mediumtext">Time Budget : </div>
+            <div class="parts wide-50px">
+                <input type="number" name="bud" value="0" class="txt txt_num noborder lightbtn mediumtext radius nomarginbottom half-paddingleft" id="addtask_budget_hours"/>
+            </div>
+            <div class="parts marginright half-marginleft smalltext greytext">hours </div>
+            <div class="parts wide-50px">
+                <input type="number" name="bud" value="0" class="txt txt_num noborder lightbtn mediumtext radius nomarginbottom half-paddingleft" id="addtask_budget_minutes"/>
+            </div>
+            <div class="parts half-marginleft smalltext greytext">minutes</div>
+        </div>
+        <div class="half-padding-vertical borderbottom lightborder marginbottom"></div>
+        <div class="parts-top orangebtn padding-horizontal half-padding-vertical cursor radius mediumtext" id="btn_createtask">Create Task</div>
+        <div class="parts-top greybtn padding-horizontal half-padding-vertical cursor radius mediumtext create_addtask">Cancel</div>
+    </div>
+</div>

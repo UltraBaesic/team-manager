@@ -1,0 +1,39 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="padding double-padding-horizontal pageoption pageoption2 hide" id="timesheetContent">
+    <div class="marginbottom white padding half-padding-vertical mediumtext border lightborder">
+        <div class="left">
+            <div class="parts marginright paddingright borderright lightborder">
+                <div class="memberName">Software Team</div>
+            </div>
+            <div class="parts"><input type="text" name="" value="" disabled="disabled" placeholder="Today's Timeline" class="noborder white wide-120px" id="datepicker"/></div>
+            <div class="parts"><i class="fa fa-fw fa-caret-down cursor dateTrigger"></i></div>
+        </div>
+        <div class="right greytext">
+            <i class="fa fa-fw fa-th-large cursor"></i>
+            <i class="fa fa-fw fa-bars cursor margin-horizontal"></i>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="wide center padding-vertical" id="timesheetDisplay">
+        <div class="clone hide-on-load">
+            <div class="time-line long-line tms-long-line"></div>
+            <div class="padding half-padding-vertical redbtn whitetext parts radius tms-date">2018 - 10 - 08</div>
+            <div class="tms-entry hide-on-load">
+                <div class="time-line"></div>
+                <div class="timesheet-entry">
+                    <div class="mediumtext tms-entry-time padding half-padding-vertical lightbtn radius">11 : 15</div>
+                    <div class="timesheet-tile-left tms-entry-position textleft">
+                        <div class="tile">
+                            <div class="tile-header tms-entry-topic">Welcome</div>
+                            <div class="tile-body tms-entry-comment">Team manager helps you organise your work and put 
+                                your output in perspective.</div>
+                        </div>
+                        <!--<div class="tile minitile">This Task was updated on 2018-10-08</div>-->
+                    </div>
+                    <div class="tms-entry-id"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

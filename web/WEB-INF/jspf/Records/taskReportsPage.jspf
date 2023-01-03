@@ -1,0 +1,100 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="padding double-padding-horizontal pageoption pageoption3 hide" id="taskReportContent">
+    <div class="marginbottom white padding half-padding-vertical mediumtext border lightborder">
+        <div class="left">
+            <div class="parts marginright paddingright borderright lightborder">
+                <div class="memberName">Software Team</div>
+            </div>
+            <div class="parts padding-horizontal">Get All Tasks</div>
+        </div>
+        <div class="right greytext">
+            <i class="fa fa-fw fa-th-large cursor"></i>
+            <i class="fa fa-fw fa-bars cursor margin-horizontal"></i>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="wide padding-vertical task-rep-tasks">
+        <div class="padding white radius border lightborder mediumtext marginbottom clone hide">
+            <div class="">
+                <div class="marginbottom">
+                    <!--<div class="mediumtext greytext">Task Topic</div>-->
+                    <div class="task-rep-topic bold">The first Task I ever created</div>
+                </div>
+                <div class="left">
+                    <div class="parts double-marginright marginbottom">
+                        <div class="mediumtext greytext">Task Parent</div>
+                        <div class="task-rep-parent bold">Parent of the first task ever</div>
+                    </div>
+                    <div class="parts marginbottom">
+                        <div class="mediumtext greytext">Total Duration</div>
+                        <div class="task-rep-duration bold">0</div>
+                    </div>
+                </div>
+                <div class="right paddingright half-paddingtop">
+<!--                    <div class="parts padding-horizontal">
+                        <div class="linkbtn bluetext">Users Task Report</div>
+                    </div>
+                    <div class="parts padding-horizontal border-horizontal ashborder">
+                        <div class="linkbtn bluetext">Task Structure</div>
+                    </div>-->
+                    <div class="parts padding-horizontal task-rep-view-task">
+                        <div class="linkbtn bluetext">Open Task</div>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="borderbottom blueborder task-rep-users">
+                <div class="clone hide">
+                    <div class="accordion-parent task-rep-user">
+                        <div class="padding border blueborder noborderbottom lightblue">
+                            <div class="left task-user-rep-open">
+                                <div class="parts cursor marginright accordion-handler"></div>
+                                <div class="parts">
+                                    <div class="task-user-rep-username">Stephen George</div>
+                                    <div class="task-user-rep-status hide"></div> 
+                                </div>
+                            </div>
+                            <div class="right paddingright">
+                                <div class="parts double-marginright">
+                                    <div class="">Sessions: <span class="bold marginleft task-user-rep-sessions">23</span></div>
+                                </div>
+                                <div class="parts">
+                                    <div class="">Total Time Spent: <span class="bold marginleft task-user-rep-duration">5hrs 28mins</span></div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="accordion-content bordertop blueborder">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Activity</td>
+                                        <td>Date</td>
+                                        <td>Start Time</td>
+                                        <td>End Time</td>
+                                        <td>Duration</td>
+                                        <td>Status</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="user-reports-display">
+                                    <tr class="clone hide">
+                                        <td class="user-rep-comment">Getting ready to begin the opening act</td>
+                                        <td class="user-rep-date">21st July 2018</td>
+                                        <td class="user-rep-start">11:30:00</td>
+                                        <td class="user-rep-end">11:42:50</td>
+                                        <td class="user-rep-duration">12min 50sec</td>
+                                        <td class="user-rep-status">Concluded</td>
+                                    </tr>
+                                    <tr class="none hide">
+                                        <td class="rep-task center" colspan="6">No Result</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

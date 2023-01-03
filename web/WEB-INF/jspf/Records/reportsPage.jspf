@@ -1,0 +1,110 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="padding double-padding-horizontal pageoption pageoption1" id="timesheetContent">
+    <div class="marginbottom white padding half-padding-vertical mediumtext border lightborder">
+        <div class="left">
+            <div class="parts marginright paddingright borderright lightborder">
+                <div class="memberName">Software Team</div>
+            </div>
+            <div class="parts padding-horizontal">Generate Reports from : </div>
+            <div class="parts wide-85px"><input type="text" name="" value="" disabled="disabled" placeholder="Today" class="noborder white" id="datepicker"/></div>
+            <div class="parts"><i class="fa fa-fw fa-caret-down cursor dateTrigger"></i></div>
+            <div class="parts padding-horizontal">To : </div>
+            <div class="parts marginleft wide-80px"><input type="text" name="" value="" disabled="disabled" placeholder="Today" class="noborder white" id="datepicker2"/></div>
+            <div class="parts"><i class="fa fa-fw fa-caret-down cursor dateTrigger2"></i></div>
+        </div>
+        <div class="right greytext">
+            <i class="fa fa-fw fa-th-large cursor"></i>
+            <i class="fa fa-fw fa-bars cursor margin-horizontal"></i>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="wide padding-vertical">
+        <div class="mem-report reportsParent">
+            <div class="center padding silver mediumtext none hide">No Reports to display</div>
+            <div class="reportsClone tileoptionParent hide double-marginbottom">
+                <div class="padding half-padding-vertical tileoptionSelected border lightborder parts mediumtext double-marginleft rep-date cursor tileoption1Link tileoptionLink">8th October 2018</div>
+                <div class="padding half-padding-vertical border lightborder parts mediumtext tileoption2Link tileoptionLink cursor">Summary</div>
+                <div class="white border lightborder radius mediumtext tileoption tileoption1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Task</td>
+                                <td>Activity</td>
+                                <td>Start Time</td>
+                                <td>End Time</td>
+                                <td>Duration</td>
+                                <td>Status</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody class="reportsDisplay">
+                            <tr class="clone hide">
+                                <td class="rep-task-topic">Topic</td>
+                                <td class="rep-comment">Getting ready to begin the opening act</td>
+                                <td class="rep-start">11:30:00</td>
+                                <td class="rep-end">11:42:50</td>
+                                <td class="rep-duration">12min 50sec</td>
+                                <td class="rep-status">Concluded</td>
+                                <td><div class="parts linkbtn bluetext mediumtext rep-view-task">View Task</div><span class="hide rep-id"></span></td>
+                            </tr>
+                            <tr class="none">
+                                <td class="rep-task center" colspan="6">No Result</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="white border lightborder radius mediumtext tileoption tileoption2 hide">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Activity</td>
+                                <td>No Of Sessions</td>
+                                <td>Total Time</td>
+                            </tr>
+                        </thead>
+                        <tbody class="summary-parent">
+                            <tr class="summary-clone hide">
+                                <td class="summary-activity">Activity one and Two</td>
+                                <td class="summary-sessions">2</td>
+                                <td class="summary-time">2 hours 30 minutes</td>
+                            </tr>
+                            <tr class="summary-total hide">
+                                <td class="bold" colspan="2">
+                                    Total number of tasks worked on:
+                                    <span class="marginleft summary-total-tasks redtext"></span>
+                                </td>
+                                <td class="bold">
+                                    Total time spent today:
+                                    <span class="marginleft summary-total-time redtext"></span>
+                                </td>
+                            </tr>
+                            <tr class="hide none">
+                                <td class="center" colspan="3">No Result</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--        <div class="wide padding-vertical">
+                    <div class="padding half-padding-vertical orangebtn whitetext parts mediumtext double-marginleft rep-date">Summary</div>
+                    <div class="white border lightborder radius mediumtext padding">
+                        <div class="padding bold borderbottom lightborder">
+                            <div class="left">Activity</div>
+                            <div class="right">Total Time spent</div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="summary-parent">
+                            <div class="padding list summary-clone hide">
+                                <div class="left summary-activity">Activity one and Two</div>
+                                <div class="right summary-time">2 hours 30 minutes</div>
+                                <div style="clear: both"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+    </div>
+</div>
+

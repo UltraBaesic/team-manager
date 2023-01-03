@@ -1,0 +1,36 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="rightContent" id="teamroom">
+    <div class="padding mobile-show hide white borderbottom faintborder">
+        <span class="team_name orangetext bold"></span>
+        <span class="right mobileoption1Link bluetext mediumtext mini-margintop">tap to change</span>
+    </div>
+    <div class="tabs mediumtext">
+        <div class="parts padding-horizontal half-padding-vertical cursor pageoptionLink optionSelected pageoption1Link left lightborder nomargin">Team Members</div>
+        <div class="parts padding-horizontal half-padding-vertical cursor pageoptionLink pageoption2Link border-horizontal left nomargin">Resources</div>
+        <div class="parts padding-horizontal half-padding-vertical cursor pageoptionLink pageoption3Link left nomargin">Messages</div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="pageoption pageoption1 white padding overflow">
+        <table class="mediumtext white">
+            <thead>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Email Address</td>
+                    <td>Phone Number</td>
+                    <td>Date Joined</td>
+                </tr>
+            </thead>
+            <tbody id="memberTable">
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="pageoption pageoption2 white padding hide overflow">
+        <%@include file="resources.jspf" %>
+    </div>
+    <div class="pageoption pageoption3 hide overflow">
+        <%@include file="teamMessages.jspf" %>
+    </div>
+</div>
